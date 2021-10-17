@@ -47,15 +47,17 @@ class App extends Component{
   render() {
     const {currentUser} = this.state;
     return (
-      <div>
+      <>
         <Header currentUser={currentUser} />
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/shop"  component={ShopPage} />
-          <Route path="/signin" component={SignInAndSignUpPage} />
-          <Route component={NotFound} />
-        </Switch>
-      </div>
+        <main>
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route path="/shop"  component={ShopPage} />
+            <Route path="/signin" component={SignInAndSignUpPage} />
+            <Route component={NotFound} />
+          </Switch>
+        </main>
+      </>
     );
   }
 }
