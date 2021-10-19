@@ -11,6 +11,10 @@ class ShopPage extends Component {
         }
     }
 
+    componentDidMount() {
+        document.title = "Crown Clothes | Shop";
+    }
+
     render() {
         const {collections} = this.state;
 
