@@ -12,6 +12,8 @@ const CollectionItem = ({item, addItem }) => {
             <div 
                 className="image"
                 style={{backgroundImage: `url(${imageUrl})`}}
+                aria-label={name}
+                role="img"
             >
             </div>
             <div className="collection-footer">
