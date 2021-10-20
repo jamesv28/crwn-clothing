@@ -6,10 +6,15 @@ import {connect} from 'react-redux';
 import {toggleCartHidden} from '../../redux/cart/cart.action';
 
 const CartIcon = ({toggleCartHidden}) => (
-    <div className="cart-icon" onClick={toggleCartHidden}>
+    <button 
+        className="cart-icon" 
+        onClick={toggleCartHidden} 
+        aria-label="Cart items" 
+        id="shopping-cart"
+    >
         <ShoppingIcon className="cart-icon" />
-            <span className="item-count">0</span>
-    </div>
+            <span className="item-count" aria-describedby="shopping-cart">0</span>
+    </button>
 )
 const mapDispatchToProps = dispatch => ({
     toggleCartHidden: () => dispatch(toggleCartHidden())

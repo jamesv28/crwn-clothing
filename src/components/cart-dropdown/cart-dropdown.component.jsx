@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import './cart-dropdown.styles.scss';
 
 const CartDropdown = ({cartItems}) => (
-    <div className="cart-dropdown">
+    <div className="cart-dropdown" id="cart">
         <div className="cart-items">
             {
                 cartItems.map(cartItem => 
