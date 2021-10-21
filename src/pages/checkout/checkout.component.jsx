@@ -17,11 +17,6 @@ class CheckoutPage extends Component {
                 <div className="checkout-header">
                     <div className="header-block">
                         <span>
-
-                        </span>
-                    </div>
-                    <div className="header-block">
-                        <span>
                             Product
                         </span>
                     </div>
@@ -33,6 +28,11 @@ class CheckoutPage extends Component {
                     <div className="header-block">
                         <span>
                             Quantity
+                        </span>
+                    </div>
+                    <div className="header-block">
+                        <span>
+                            Price
                         </span>
                     </div>
                     <div className="header-block">
