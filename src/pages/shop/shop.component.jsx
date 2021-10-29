@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {Route} from 'react-router-dom';
+import CollectionsPage from '../collection/collection.page';
+
 import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
 
 class ShopPage extends Component {
@@ -8,9 +11,11 @@ class ShopPage extends Component {
     }
 
     render() { 
+        const {match} = this.props;
         return (
             <div className="shop-page">
-                <CollectionsOverview />
+                <Route exact path={`${match.path}`} component={CollectionsOverview} />
+                <Route path={`${match.path}/:categoryId`} component={CollectionsPage} />
             </div>
         )
     }
