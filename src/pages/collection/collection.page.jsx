@@ -7,6 +7,7 @@ import CollectionItem from '../../components/collection-item/collection-item.com
 import './collection.styles.scss';
 
 class CollectionsPage extends Component {
+    
     componentDidMount() {
         document.title = "Crown Clothes | Collections"
     }
@@ -14,10 +15,18 @@ class CollectionsPage extends Component {
     render() {
 
         const {match, collection} = this.props;
-        console.log('collection', collection);
+        const {title, items} = collection;
         return (
-            <div className="category">
-                <h2>Collection Page</h2>
+            <div className="collection-page">
+                <h2 className="title">{title}</h2>
+                <div className="items">
+                    {
+                        items.map(item => <CollectionItem 
+                                            key={item.id} 
+                                            item={item} 
+                                            />)
+                    }
+                </div>
             </div>
         )
     }
