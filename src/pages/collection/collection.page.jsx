@@ -14,7 +14,7 @@ class CollectionsPage extends Component {
 
     render() {
 
-        const {match, collection} = this.props;
+        const {collection} = this.props;
         const {title, items} = collection;
         return (
             <div className="collection-page">
