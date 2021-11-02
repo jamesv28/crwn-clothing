@@ -9,7 +9,7 @@ import './collection.styles.scss';
 class CollectionsPage extends Component {
     
     componentDidMount() {
-        document.title = "Crown Clothes | Collections"
+        document.title = "Crown Clothes | Collections";
     }
 
     render() {
