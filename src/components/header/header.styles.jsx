@@ -1,9 +1,6 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
-const optionContainerStyles = css`
-
-`
 export const HeaderContainer = styled.nav`
     height: 70px;
     width: 100%;
