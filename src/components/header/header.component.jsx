@@ -19,7 +19,9 @@ const Header = ({currentUser,hidden}) => (
                 <OptionLink to="/shop" className="option">SHOP</OptionLink>
                 <OptionLink to="/shop" className="option">CONTACT</OptionLink>
                 {currentUser ? 
-                    <OptionLink onClick={() => auth.signOut()}>Sign Out </OptionLink> 
+                    <div 
+                        style={{textTransform: 'uppercase'}}
+                        onClick={() => auth.signOut()}>Sign Out </div> 
                     :
                     <OptionLink to='/signin'>Sign In </OptionLink>
                 }
