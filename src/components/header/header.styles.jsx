@@ -26,4 +26,15 @@ export const OptionsContainer = styled.div`
 export const OptionLink = styled(Link)`
     padding: 10px 15px;
     cursor: pointer;
+    text-transform: uppercase;
+`
+
+export const OptionButton = styled.button`
+    padding: 10px 15px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
 `
