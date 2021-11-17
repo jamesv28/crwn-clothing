@@ -18,6 +18,11 @@ export const selectCollectionIsFetching = createSelector(
     shop => shop.isFetching
 )
 
+export const selectIsCollectionLoaded = createSelector(
+    [selectShop],
+    shop => !!shop.collections
+)
+
 export const selectCollection = collectionUrlParam => 
     createSelector(
         [selectCollections],

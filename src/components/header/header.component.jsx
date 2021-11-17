@@ -17,6 +17,7 @@ const Header = ({currentUser,hidden}) => (
             </LogoContainer>
             <OptionsContainer>
                 <OptionLink to="/shop" className="option">SHOP</OptionLink>
+                <OptionLink to='/about'>ABOUT</OptionLink>
                 <OptionLink to="/shop" className="option">CONTACT</OptionLink>
                 {currentUser ? 
                     <OptionButton 

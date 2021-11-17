@@ -5,6 +5,7 @@ import Homepage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-siign-up.page';
 import CheckoutPage from './pages/checkout/checkout.component';
+import AboutPage from './pages/about/about.component';
 import NotFound from './pages/not-found/not-found.page';
 import {selectCurrentUser} from './redux/user/user.selectors';
 import {createStructuredSelector} from 'reselect';
@@ -49,6 +50,7 @@ class App extends Component{
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/shop"  component={ShopPage} />
+            <Route exact path='/about' component={AboutPage} />
             <Route exact path="/signin" render={() => this.props.currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />} />
             <Route exact path="/checkout" component={CheckoutPage} />
             <Route component={NotFound} />
